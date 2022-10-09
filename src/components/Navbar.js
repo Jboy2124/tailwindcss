@@ -15,30 +15,40 @@ const Navbar = () => {
                             <ul className='flex flex-row justify-end space-x-5'>
                                 <li className='py-6 px-2 
                                     hover:text-green-500 
+                                    hover:cursor-pointer
                                     hover:underline 
                                     hover:underline-offset-8 
                                     hover:decoration-2 
-                                    hover:transition duration-300'><Link to="/">Home</Link></li>
+                                    hover:transition duration-300'>
+                                    <Link to="/">Home</Link></li>
                                 <li className='py-6 px-2 
-                                    hover:text-green-500 
+                                    hover:text-green-500
+                                    hover:cursor-pointer
                                     hover:underline 
                                     hover:underline-offset-8 
                                     hover:decoration-2 
-                                    hover:transition duration-300'><Link to="/about">About Us</Link></li>
+                                    hover:transition duration-300'>
+                                    <Link to="/about">About Us</Link></li>
                                 <li className='py-6 px-2 
-                                    hover:text-green-500 
+                                    hover:text-green-500
+                                    hover:cursor-pointer
                                     hover:underline 
                                     hover:underline-offset-8 
                                     hover:decoration-2 
-                                    hover:transition duration-300'><Link to="/contact">Contact Us</Link></li>
+                                    hover:transition duration-300'>
+                                    <Link to="/contact">Contact Us</Link></li>
                             </ul>
                         </div>
-                        <div className='hidden md:flex items-center justify-end space-x-3'>
-                            <ul className='flex flex-row justify-end space-x-5'>
-                                <li className='py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white hover:cursor-pointer transition duration-300'>Login</li>
-                                <li className='py-2 px-2 font-medium text-gray-500 rounded hover:bg-green-500 hover:text-white hover:cursor-pointer transition duration-300'>Signup</li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div className='hidden md:flex items-center justify-end space-x-3'>
+                        <ul className='flex flex-row justify-end space-x-5'>
+                            <li className='bg-transparent hover:bg-green-500 font-semibold hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded'>
+                                <Link to="/login">Login</Link>
+                            </li>
+                            <li className='bg-green-500 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded'>
+                                <Link to="/signup">Signup</Link>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
