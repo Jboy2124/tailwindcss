@@ -5,8 +5,8 @@ import Navbar from '../components/Navbar'
 const NoPage = () => {
   return (
     <div>
-        <Navbar />
-        <h1>404 - Page not found.</h1>
+      <Navbar />
+      <h1>404 Page not found!</h1>
     </div>
   )
 }
