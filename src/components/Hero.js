@@ -11,16 +11,33 @@ const Hero = () => {
                           text-8xl'>
                 Guaranteed!
             </p>
-            <div className='flex
-                            flex-row
-                            bg-green-500
-                            text-white
-                            rounded-full
-                            px-8 py-2
-                            hover:cursor-pointer
-                            hover:bg-green-600'>
-                Get Started
+            <div className='flex flex-row justify-center items-center space-x-5'>
+              <div className='flex
+                              flex-row
+                              bg-green-500
+                              text-white
+                              rounded-full
+                              px-8 py-2
+                              hover:cursor-pointer
+                              hover:bg-green-600'>
+                  Get Started
+              </div>
+              {/* <div className='flex
+                              flex-row
+                              bg-green-500
+                              text-white
+                              rounded-l-full
+                              px-8 py-2
+                              hover:cursor-pointer
+                              hover:bg-green-600'>
+                  Signup
+              </div>
+              <div className='flex flex-row bg-green-200 text-white rounded-r-full'>
+                Fuck you
+              </div> */}
             </div>
+            
+            
         </div>
 
         <div className='container
