@@ -10,7 +10,7 @@ const Home = () => {
     <div>
         <Navbar />
         <Hero />
-        <div className='container flex flex-row space-x-5 py-20 justify-center items-center mx-auto'> 
+        <div className='container flex flex-row space-x-5 min-h-screen justify-center items-center mx-auto'> 
           {
             testimonials.map(payload => {
               return(
