@@ -4,96 +4,30 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-   <div className='relative mx-auto p-4 shadow-md'>
-      <div className='flex flex-row items-center justify-between mx-10'>
-        <div className='flex flex-row items-center space-x-3'>
-          <img className='h-10 w-15'  src={Img} alt="Logo"></img>
-          <div className='flex flex-row items-center'>
-            <p className='text-3xl font-semibold'></p>
-          </div>
+    <div className='relative shadow-md flex flex-row py-6 p-2 px-10'>
+      <div className='w-1/5'>
+        <span className='text-green-500 font-bold text-4xl'>RENT</span>
+        <span className='text-red-500 font-bold text-4xl'>EXCHANGE</span>
+        <span>.com</span>
+      </div>
+      <div className='flex flex-row justify-end items-center w-3/5'>
+        <ul className='flex flex-row items-center space-x-6'>
+          <li className='hover:scale-110 hover:transition duration-200 hover:text-green-500'><Link to="/">Home</Link></li>
+          <li className='hover:scale-110 hover:transition duration-200 hover:text-green-500'><Link to="/services">Services</Link></li>
+          <li className='hover:scale-110 hover:transition duration-200 hover:text-green-500'><Link to="/">Career</Link></li>
+          <li className='hover:scale-110 hover:transition duration-200 hover:text-green-500'><Link to="/about">About Us</Link></li>
+          <li className='hover:scale-110 hover:transition duration-200 hover:text-green-500'><Link to="/contact">Contact Us</Link></li>
+        </ul>
+      </div>
+      <div className='flex flex-row justify-end items-center w-1/5 space-x-2'>
+        <div className='border border-green-500 rounded-full px-6 py-1 text-semibold hover:bg-green-500 hover:text-white hover:cursor-pointer'>
+          <Link to="/login">Login</Link>
         </div>
-
-        <div className='hidden md:flex flex-row items-center justify-end'>
-          <div>
-            <ul className='flex flex-row items-center space-x-6 pr-10'>
-              <li className='decoration-2 
-                            hover:underline 
-                            hover:underline-offset-8 
-                            hover:text-green-500 
-                            hover:cursor-pointer 
-                            hover:transition duration-300'>
-                <Link to="/">Home</Link>
-              </li>
-              <li className='decoration-2 
-                            hover:underline 
-                            hover:underline-offset-8 
-                            hover:text-green-500 
-                            hover:cursor-pointer 
-                            hover:transition duration-300'>
-                <Link to="/services">Service</Link>
-              </li>
-              <li className='decoration-2 
-                            hover:underline 
-                            hover:underline-offset-8 
-                            hover:text-green-500 
-                            hover:cursor-pointer 
-                            hover:transition duration-300'>
-                <Link to="/">Career</Link>
-              </li>
-              <li className='decoration-2 
-                            hover:underline 
-                            hover:underline-offset-8 
-                            hover:text-green-500 
-                            hover:cursor-pointer 
-                            hover:transition duration-300'>
-                <Link to="/about">About Us</Link>
-              </li>
-              <li className='decoration-2 
-                            hover:underline 
-                            hover:underline-offset-8 
-                            hover:text-green-500 
-                            hover:cursor-pointer 
-                            hover:transition duration-300'>
-                <Link to="/contact">Contact Us</Link>
-              </li>
-            </ul>
-          </div>
-          <div className='hidden md:flex flex-row items-center space-x-2'>
-          <div className='bg-transparent py-1 px-8
-                          border 
-                          border-green-500 
-                          rounded-full
-                          items-center 
-                          cursor-pointer 
-                          font-semibold 
-                          hover:bg-green-500 
-                          hover:cursor-pointer 
-                          hover:border-green-600 
-                          hover:text-white'>
-                          <Link to="/login">
-                            Login
-                          </Link>
-          </div>
-          {/* <div className='bg-green-500 
-                          text-white py-2 px-6 
-                          border 
-                          border-green-500 
-                          rounded-full
-                          items-center 
-                          cursor-pointer 
-                          font-semibold 
-                          hover:bg-green-400 
-                          hover:cursor-pointer 
-                          hover:border-green-400 
-                          hover:text-white'>
-                          <Link to="/signup">
-                            Signup
-                          </Link>
-          </div> */}
-        </div>
+        <div className='border border-green-500 bg-green-500 rounded-full px-6 py-1 text-white text-semibold hover:bg-white hover:text-black hover:cursor-pointer'>
+          <Link to="/signup">Sign Up</Link>
         </div>
       </div>
-   </div>
+    </div>
   )
 }
 

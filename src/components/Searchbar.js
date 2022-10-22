@@ -1,43 +1,14 @@
 import React from 'react'
+import { FaSearch } from 'react-icons/fa'
 
 const Searchbar = () => {
   return (
-    <div className='bg-green-100
-                    flex 
-                    flex-row 
-                    justify-center 
-                    items-center 
-                    py-4 
-                    m-auto'>
-        <div className='flex 
-                        flex-row 
-                        m-auto 
-                        justify-center 
-                        items-center 
-                        space-x-3'>
-            <input className='rounded w-80 h-8 pl-2 
-                              border 
-                              border-green-500 
-                              text-sm'
-                   type="text" 
-                   name='seachbox' 
-                   placeholder='Search...'></input>
-            <div className='bg-green-500
-                            border 
-                          border-green-500
-                            rounded-full
-                            baseline
-                            text-white
-                            text-sm
-                            font-semibold
-                            py-2
-                            px-5
-                            hover:cursor-pointer
-                            hover:bg-green-600
-                            hover:text-white'>
-                Search
-            </div>
-        </div>
+    <div className='flex flex-row justify-center items-center bg-green-100 py-6 m-auto space-x-3'>
+      <div className='flex flex-row justify-center items-center space-x-1 py-1 px-2 rounded-full bg-white border border-green-500'>
+        <FaSearch className='text-gray-300' />
+        <input className='w-80 px-1 text-sm py-1 outline-none bg-transparent' type="text" placeholder='Search items' />
+      </div>
+      <div className='rounded-full flex justify-center items-center px-6 py-1 border bg-green-500 text-white text-semibold hover:bg-white hover:text-green-500 hover:cursor-pointer hover:border-green-500'>Search</div>
     </div>
   )
 }

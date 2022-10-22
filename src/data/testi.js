@@ -1,5 +1,6 @@
 const testimonials = [
     {
+      id: 1,
       image: "https://placeimg.com/120/120/people",
       name: "Jboy Abecia",
       context: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "+
@@ -10,6 +11,7 @@ const testimonials = [
             "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      id: 2,
       image: "https://placeimg.com/120/120/nature",
       name: "Beth Abecia",
       context: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "+
@@ -20,6 +22,7 @@ const testimonials = [
             "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      id: 3,
       image: "https://placeimg.com/120/120/tech",
       name: "Margaux   Maureen Abecia",
       context: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "+
@@ -30,6 +33,7 @@ const testimonials = [
               "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     },
     {
+      id: 4,
       image: "https://placeimg.com/120/120/animals",
       name: "Budik Abecia",
       context: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "+

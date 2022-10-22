@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
-  mode: 'jit',
   theme: {
+    screens: {
+      tablet: '960px',
+      desktop: '1248px'
+    },
     extend: {
       colors: {
         'red-orange': '#E04D01',
